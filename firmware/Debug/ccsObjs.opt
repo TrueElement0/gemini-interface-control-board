@@ -1,0 +1,6 @@
+"./geminiControlClient.obj"
+"./MatrixKeypad_Module/mtrxKeypad.obj"
+"./SPI_Module/spi.obj"
+"./SevenSeg_Module/sevenSeg.obj"
+"../lnk_msp430g2353.cmd"
+-llibc.a

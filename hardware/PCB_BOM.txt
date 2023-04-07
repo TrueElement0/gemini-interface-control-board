@@ -1,0 +1,89 @@
+Digikey pre-made part list: https://www.digikey.ca/en/mylists/list/E9O201A1U2
+
+
+Eagle BOM Output:
+
+Part    Value            Device                                Package                               Description
+
+BR1     ABS6U            ABS6U                                 SOP400P640X150-4N                     Full bridge rectifier
+C1      2200uF           CAP-RADIAL-16DX30L                    CAP-RADIAL-16DX30L                    Electrolytic capacitor
+C2      2.2uF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C3      2.2uF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C4      0.1uF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C5      8.2nF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C6      150pF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C7      0.1uF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C8      47uF             C-USC0805                             C0805                                 CAPACITOR, American symbol
+C9      47uF             C-USC0805                             C0805                                 CAPACITOR, American symbol
+C10     0.1uF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C11     1nF              C-USC0805                             C0805                                 CAPACITOR, American symbol
+C12     0.1uF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C13     0.1uF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C14     0.1uF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C15     0.1uF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C16     0.1uF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C17     0.1uF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C18     0.1uF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C19     0.1uF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C20     0.1uF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C21     0.1uF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C22     0.1uF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+C23     0.1uF            C-USC0805                             C0805                                 CAPACITOR, American symbol
+D1      SS3P6HM3/85A     SS3P6HM3/85A                          DO-220AA                              Schottky diode
+DS1     LTS-4510AG       LTS-4510AG                            LTS-4510AG                            7-segment display
+DS2     LTS-4510AG       LTS-4510AG                            LTS-4510AG                            7-segment display
+DS3     LTS-4510AG       LTS-4510AG                            LTS-4510AG                            7-segment display
+DS4     LTS-4510AG       LTS-4510AG                            LTS-4510AG                            7-segment display
+DS5     LTS-4510AG       LTS-4510AG                            LTS-4510AG                            7-segment display
+DS6     LTS-4510AG       LTS-4510AG                            LTS-4510AG                            7-segment display
+DS7     LTS-4510AG       LTS-4510AG                            LTS-4510AG                            7-segment display
+DS8     LTS-4510AG       LTS-4510AG                            LTS-4510AG                            7-segment display
+IC1     SN74LVC08        74HC08D                               SO14                                  Quad 2-input AND gate
+IC2     SN74LVC08        74HC08D                               SO14                                  Quad 2-input AND gate
+IC3     SN74AHC1G08      74AHC1G08DBV                          SOT23-5                               2-input AND gate
+IC4     SN74HCS264       74LS164D                              SO14                                  8-bit parallel out SHIFT REGISTER
+IC5     SN74HCS264       74LS164D                              SO14                                  8-bit parallel out SHIFT REGISTER
+IC6     SN74HCS264       74LS164D                              SO14                                  8-bit parallel out SHIFT REGISTER
+IC7     SN74HCS264       74LS164D                              SO14                                  8-bit parallel out SHIFT REGISTER
+IC8     SN74HCS264       74LS164D                              SO14                                  8-bit parallel out SHIFT REGISTER
+IC9     SN74HCS264       74LS164D                              SO14                                  8-bit parallel out SHIFT REGISTER
+IC10    SN74HCS264       74LS164D                              SO14                                  8-bit parallel out SHIFT REGISTER
+IC11    SN74HCS264       74LS164D                              SO14                                  8-bit parallel out SHIFT REGISTER
+IC12    SN74HCS264       74LS164D                              SO14                                  8-bit parallel out SHIFT REGISTER
+J1      30VAC            CON-640497-3                          CON-640497-3                          2-pin vertical header, 4.2mm pitch
+JP1                      PINHD-1X4                             1X04                                  4-pin vertical header, 2.54mm pitch
+JP2                      PINHD-1X10/90                         1X10/90                               10-pin right angle header, 2.54mm pitch
+L1      15uH             MGAH1004                              INDM110100X410N                       INDUCTOR
+LED1                     LED3MM                                LED3MM                                LED
+LED2                     LED3MM                                LED3MM                                LED
+LED3                     LED3MM                                LED3MM                                LED
+LED4                     LED3MM                                LED3MM                                LED
+LED5                     LED3MM                                LED3MM                                LED
+LED6                     LED3MM                                LED3MM                                LED
+LED7                     LED3MM                                LED3MM                                LED
+LED8                     LED3MM                                LED3MM                                LED
+R1      8.45k            R-US_R0805                            R0805                                 RESISTOR, American symbol
+R2      392k             R-US_R0805                            R0805                                 RESISTOR, American symbol
+R3      31.6k            R-US_R0805                            R0805                                 RESISTOR, American symbol
+R4      10k              R-US_R0805                            R0805                                 RESISTOR, American symbol
+R5      100k             R-US_R0805                            R0805                                 RESISTOR, American symbol
+R6      10k              R-US_R0805                            R0805                                 RESISTOR, American symbol
+R7      10k              R-US_R0805                            R0805                                 RESISTOR, American symbol
+R8      10k              R-US_R0805                            R0805                                 RESISTOR, American symbol
+R9      10k              R-US_R0805                            R0805                                 RESISTOR, American symbol
+R10     10k              R-US_R0805                            R0805                                 RESISTOR, American symbol
+R11     10k              R-US_R0805                            R0805                                 RESISTOR, American symbol
+R12     10k              R-US_R0805                            R0805                                 RESISTOR, American symbol
+R13     10k              R-US_R0805                            R0805                                 RESISTOR, American symbol
+R14     10k              R-US_R0805                            R0805                                 RESISTOR, American symbol
+RN1     220R             8R-NEXB2HV                            EXB2HV                                DIL RESISTOR
+RN2     220R             8R-NEXB2HV                            EXB2HV                                DIL RESISTOR
+RN3     220R             8R-NEXB2HV                            EXB2HV                                DIL RESISTOR
+RN4     220R             8R-NEXB2HV                            EXB2HV                                DIL RESISTOR
+RN5     220R             8R-NEXB2HV                            EXB2HV                                DIL RESISTOR
+RN6     220R             8R-NEXB2HV                            EXB2HV                                DIL RESISTOR
+RN7     220R             8R-NEXB2HV                            EXB2HV                                DIL RESISTOR
+RN8     220R             8R-NEXB2HV                            EXB2HV                                DIL RESISTOR
+RN9     3.9K             8R-NEXB2HV                            EXB2HV                                DIL RESISTOR
+U1      RTQ296GSP        RTQ296GSP                             SOIC127P599X175-9T250X350N            Adjustable buck regulator
+U2      MSP430G2353IPW28 MSP430G2253IPW28                      TSSOP28                               16-bit, 4kB flash microcontroller
