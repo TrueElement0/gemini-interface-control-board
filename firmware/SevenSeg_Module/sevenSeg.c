@@ -143,7 +143,7 @@ unsigned char SevSegToHex(SEVEN_SEG_DISP *const display)
     default:
         convFail = 1;
         break;
-    };
+    }
 
     // only store the decimal place state if a hex digit or code was successfully recognized from the display above
     if (!convFail)

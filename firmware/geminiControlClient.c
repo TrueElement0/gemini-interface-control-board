@@ -163,7 +163,8 @@
 enum GEMINI_KEYS
 {
     CC_MONITOR      = 0x40,
-    PAUSE_STOP      = 0x60,
+    PAUSE_STOP_DOWN = 0x60,     // Most keypads have pause/stop on (col2, row0), but some variants have a down arrow there instead.
+    PAUSE_STOP_ALT  = 0x41,     // On keypads with the up and down arrows, pause/stop is located at (col0, row1)
     RATE            = 0x51,
     VTBI            = 0x61,
     START           = 0x71,
@@ -357,7 +358,8 @@ void main(void)
                     }
                     break;
 
-                case PAUSE_STOP:
+                case PAUSE_STOP_DOWN:   // scanning either coordinate on either variant should have the same result
+                case PAUSE_STOP_ALT:
                     currSysState &= ~(FLAG_RATE_EDIT | FLAG_VTBI_EDIT);     // exit any ongoing value edits
                     currSysState &= ~FLAG_PUMP_ACTIVE;                      // the "pump" is no longer active
                     flashDispRow(&USCIA0SPI, sevSegDispArr, ALL_ROWS, 1);   // flash RATE and VTBI rows once at the same time

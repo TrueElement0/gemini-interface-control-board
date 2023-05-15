@@ -132,10 +132,16 @@ SuperProps_GeminiControlBoard.out \
 EXE_OUTPUTS__QUOTED += \
 "SuperProps_GeminiControlBoard.out" \
 
+BIN_OUTPUTS += \
+SuperProps_GeminiControlBoard.hex \
+
+BIN_OUTPUTS__QUOTED += \
+"SuperProps_GeminiControlBoard.hex" \
+
 
 # All Target
 all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
-	@$(MAKE) --no-print-directory -Onone "SuperProps_GeminiControlBoard.out"
+	@$(MAKE) --no-print-directory -Onone "SuperProps_GeminiControlBoard.out" secondary-outputs
 
 # Tool invocations
 SuperProps_GeminiControlBoard.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
@@ -145,13 +151,22 @@ SuperProps_GeminiControlBoard.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
+SuperProps_GeminiControlBoard.hex: $(EXE_OUTPUTS)
+	@echo 'Building secondary target: "$@"'
+	@echo 'Invoking: MSP430 Hex Utility'
+	"/opt/ccstudio/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/hex430" --memwidth=16 --romwidth=16 --diag_wrap=off --ti_tagged -o "SuperProps_GeminiControlBoard.hex" $(EXE_OUTPUTS__QUOTED)
+	@echo 'Finished building secondary target: "$@"'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) $(EXE_OUTPUTS__QUOTED)
+	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
 	-$(RM) "geminiControlClient.obj" "MatrixKeypad_Module/mtrxKeypad.obj" "SPI_Module/spi.obj" "SevenSeg_Module/sevenSeg.obj" 
 	-$(RM) "geminiControlClient.d" "MatrixKeypad_Module/mtrxKeypad.d" "SPI_Module/spi.d" "SevenSeg_Module/sevenSeg.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
+
+secondary-outputs: $(BIN_OUTPUTS)
 
 .PHONY: all clean dependents
 .SECONDARY:
